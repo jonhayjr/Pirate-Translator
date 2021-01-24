@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- pirate.html                               Dave Reed -->
+<!-- Simple page that translates words/phrases from      -->
+<!-- English to pirate at the click of a button.         -->
+<!-- =================================================== -->
+
+<html>
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title> Pirate Translator </title>
+   <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap" rel="stylesheet">
+ </head>
+
+ <body>
+     <header>
+        <h1>Land Lubber's Pirate Translator</h1>
+        <p>Simply click on the buttons to translate
+      words and/or phrases from English to pirate talk.
+        </p>
+     </header>
+   <main>
+    <img src="img/pirate1.jpg" id="pirate-image">
+   <table>
+       <tr>
+           <td class="row-heading">Greetings:</td>
+            <td><button id="hello" class="word-btn">hello</button></td>
+            <td><button id="pardon-me" class="word-btn">pardon me</button></td>
+            <td><button id="excuse-me" class="word-btn">excuse me</button></td>
+        </tr>
+        <tr>
+            <td class="row-heading">People:</td>
+            <td><button id="stranger" class="word-btn">stranger</button></td>
+            <td><button id="sir" class="word-btn">sir</button></td>
+            <td><button id="madam" class="word-btn">madam</button></td>
+            <td><button id="officer" class="word-btn">officer</button></td>
+        </tr>
+
+        <tr>
+            <td class="row-heading">Questions:</td>
+            <td><button id="where-is" class="word-btn">where is</button></td>
+            <td><button id="can-you-help-me-find" class="word-btn">can you help me find</button></td>
+            <td><button id="is that" class="word-btn">is that</button></td>
+        </tr>
+
+        <tr>
+            <td class="row-heading">Articles:</td>
+            <td><button id="the" class="word-btn">the</button></td>
+            <td><button id="my" class="word-btn">my</button></td>
+            <td><button id="your" class="word-btn">your</button></td>
+        </tr>
+
+        <tr>
+            <td class="row-heading">Places:</td>
+            <td><button id="restroom" class="word-btn">head</button></td>
+            <td><button id="restaurant" class="word-btn">restaurant</button></td>
+            <td><button id="hotel" class="word-btn">hotel</button></td>
+        </tr>
+
+       
+   </table>
+ 
+    
+     <button id="clear">Clear the Translation</button>
+
+   <hr>
+   <div id="outputDiv"></div>
+   <script src="app.js"></script>
+   </main>
+   
+ </body>
+</html>

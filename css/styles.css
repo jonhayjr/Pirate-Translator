@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Pirata One', cursive;
+}
+
+header {
+    background: silver;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+header,
+main {
+    text-align: center;
+}
+
+main {
+    padding: 0.75rem;
+}
+
+
+p {
+    border-bottom: solid 1px black;
+    padding-bottom: 1rem;
+}
+
+table {
+    margin: 0 auto;
+}
+
+img {
+    width: 50%;
+    height: auto;
+    border-radius: 80%;
+    border: solid 3px black;
+    margin-bottom: 1rem;
+}
+
+.word-btn,
+#clear {
+    font-size: 0.6rem;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+}
+
+.word-btn {
+    background: #395461;
+    border: solid 2px transparent;
+    border-radius: 5px 5px;
+    color: white;
+    padding: 0.25rem;
+    margin: 0.15rem;
+}
+
+.word-btn:hover,
+.word-btn:active {
+    background: white;
+    color: #395461;
+    border: solid 2px #395461;
+}
+
+#clear {
+    margin-top: 1rem;
+    border-radius: 5px 5px;
+    color: firebrick;
+    border: solid 2px rgba(178, 34, 34, 0.246);
+    margin-bottom: 1rem;
+}
+
+#clear:hover,
+#clear:active {
+    color: white;
+    background: firebrick;
+    border: solid 2px white;
+}
+
+#outputDiv {
+    margin-top: 1rem;
+    height: 100px;
+    background-color:rgba(112, 128, 144, 0.233);
+    border: solid 2px black;
+    padding: 1rem;
+    width: auto;
+    font-size: 1rem;
+    text-shadow: 2px 2px slategray;
+}
+
+@media (min-width: 768px) {
+main {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.word-btn,
+#clear {
+    padding: 1rem;
+    font-size: 1rem;    
+}
+
+#outputDiv {
+    font-size: 1rem;
+    height: 200px;
+}
+
+}
