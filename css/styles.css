@@ -14,6 +14,7 @@ header {
     margin: 0;
     padding: 0;
     width: 100%;
+    padding-top: 1rem;
 }
 
 header,
@@ -43,11 +44,19 @@ img {
     margin-bottom: 1rem;
 }
 
+.row-heading {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
 .word-btn,
 #clear {
-    font-size: 0.6rem;
-    font-family: 'Roboto Slab', serif;
+    font-size: 0.6rem; 
     font-weight: bold;
+}
+.word-btn,
+#clear {
+    font-family: 'Roboto Slab', serif;
 }
 
 .word-btn {
@@ -93,15 +102,24 @@ img {
 }
 
 @media (min-width: 768px) {
+
+ header {
+    padding:
+ }
+
 main {
     width: 75%;
     margin: 0 auto;
 }
 
+.row-heading {
+    font-size: 1.2rem; 
+}
+
 .word-btn,
 #clear {
     padding: 1rem;
-    font-size: 1rem;    
+    font-size: 1.2rem;    
 }
 
 #outputDiv {
