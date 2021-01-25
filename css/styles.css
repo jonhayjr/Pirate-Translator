@@ -111,9 +111,9 @@ img {
     border: solid 2px black;
     padding: 1rem;
     min-height: 25vh;
-	max-height: 50vh;
+    max-height: 25vh;
 	width: 100%;
-    overflow: auto;
+    overflow: scroll;
     font-size: 1rem;
     text-shadow: 2px 2px slategray;
 }
@@ -142,6 +142,7 @@ main {
 
 #outputDiv {
     font-size: 2rem;
+    max-height: 50vh;
 }
 
 }
