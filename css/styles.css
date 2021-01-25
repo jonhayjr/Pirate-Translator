@@ -110,7 +110,9 @@ img {
     background-color:rgba(112, 128, 144, 0.233);
     border: solid 2px black;
     padding: 1rem;
-    min-height: 100px;
+    min-height: 25vh;
+	max-height: 50vh;
+	width: 100%;
     overflow: auto;
     font-size: 1rem;
     text-shadow: 2px 2px slategray;
@@ -140,7 +142,6 @@ main {
 
 #outputDiv {
     font-size: 2rem;
-    min-height: 200px;
 }
 
 }
