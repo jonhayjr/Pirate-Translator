@@ -50,13 +50,12 @@ img {
 }
 
 .word-btn,
-#clear {
+#clear,
+#new_line {
+    font-family: 'Roboto Slab', serif;
     font-size: 0.6rem; 
     font-weight: bold;
-}
-.word-btn,
-#clear {
-    font-family: 'Roboto Slab', serif;
+    padding: 0.25rem;
 }
 
 .word-btn {
@@ -64,7 +63,6 @@ img {
     border: solid 2px transparent;
     border-radius: 5px 5px;
     color: white;
-    padding: 0.25rem;
     margin: 0.15rem;
 }
 
@@ -75,12 +73,22 @@ img {
     border: solid 2px #395461;
 }
 
+#new_line,
 #clear {
     margin-top: 1rem;
     border-radius: 5px 5px;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+
+#clear {
     color: firebrick;
     border: solid 2px rgba(178, 34, 34, 0.246);
-    margin-bottom: 1rem;
+}
+
+#new_line {
+    color: #3CB371;
+    border: solid 2px #3CB371;
 }
 
 #clear:hover,
@@ -90,13 +98,20 @@ img {
     border: solid 2px white;
 }
 
+#new_line:hover,
+#new_line:active {
+    color: white;
+    background: #3CB371;
+    border: solid 2px white;
+}
+
 #outputDiv {
     margin-top: 1rem;
-    height: 100px;
     background-color:rgba(112, 128, 144, 0.233);
     border: solid 2px black;
     padding: 1rem;
-    width: auto;
+    min-height: 100px;
+    overflow: auto;
     font-size: 1rem;
     text-shadow: 2px 2px slategray;
 }
@@ -117,14 +132,15 @@ main {
 }
 
 .word-btn,
-#clear {
+#clear,
+#new_line {
     padding: 1rem;
     font-size: 1.2rem;    
 }
 
 #outputDiv {
     font-size: 2rem;
-    height: 200px;
+    min-height: 200px;
 }
 
 }

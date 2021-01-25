@@ -2,8 +2,9 @@ const output = document.getElementById('outputDiv');
 const clear = document.getElementById('clear');
 const englishPhrase = ['hello', 'pardon me', 'excuse me', 'stranger', 'sir', 'madam', 'officer', 'where is', 'can you help me find', 'is that', 'the', 'my', 'your', 'restroom', 'restaurant', 'hotel'];
 const piratePhrase = ['ahoy', 'avast', 'arrr', 'scurvy dog', 'matey', 'proud beauty', 'foul blaggart', 'whar be', 'know ye', 'be that', 'th\'', 'me', 'yer', 'head', 'galley', 'fleabag inn'];
-
+const newLine = document.getElementById('new_line');
 const image = document.getElementById('pirate-image');
+const btns = document.querySelectorAll('.word-btn');
 
 function findPhrase(id) {
     const btnID = id;
@@ -45,7 +46,10 @@ function updateImage(event) {
     }
 }
 
-const btns = document.querySelectorAll('.word-btn');
+function insertNewLine(event) {
+    output.innerHTML += '<br>';
+};
+
 btns.forEach((btn) => {
 btn.addEventListener('click', updateText);
 });
@@ -54,3 +58,5 @@ clear.addEventListener('click', clearText);
 
 image.addEventListener('mouseover', updateImage);
 image.addEventListener('mouseout', updateImage);
+
+newLine.addEventListener('click', insertNewLine);
